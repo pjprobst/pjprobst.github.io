@@ -752,6 +752,12 @@ button:focus {
   line-height: 1.7;
 }
 
+.testimonial-card-1__paragraph {
+  font-size: .87rem;
+  opacity: .9;
+  line-height: 1.7;
+}
+
 .testimonial-card-1__quote-symbol {
   display: flex;
   align-items: center;

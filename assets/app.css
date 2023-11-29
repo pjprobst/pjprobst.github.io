@@ -746,6 +746,17 @@ button:focus {
   z-index: 0;
 }
 
+.item-card-1 {
+  padding: 1.5rem;
+  padding-top: 10rem;
+  margin-top: 58px;
+  margin-bottom: 25px;
+  background: white;
+  position: relative;
+  z-index: 0;
+}
+
+
 .item-spacing {
   font-size: .87rem;
   opacity: .0;

@@ -751,7 +751,7 @@ button:focus {
   padding-top: 10rem;
   margin-top: 58px;
   margin-bottom: 25px;
-  background: white;
+  background: #f8f8f8;
   position: relative;
   z-index: 0;
 }

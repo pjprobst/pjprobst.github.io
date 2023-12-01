@@ -37,8 +37,8 @@ body {
 
 /* The alert message box */
 .alert {
-  padding: 20px;
-  background-color: #f44336; /* Red */
+  padding: 200px;
+  background-color: #e01705; /* Red */
   color: white;
   margin-bottom: 15px;
 }
@@ -46,7 +46,7 @@ body {
 /* The close button */
 .closebtn {
   margin-left: 15px;
-  color: white;
+  color: var(--primary-invert);
   font-weight: bold;
   float: right;
   font-size: 22px;

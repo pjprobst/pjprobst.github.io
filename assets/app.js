@@ -17,3 +17,7 @@ document.querySelector('#hero-menu').
       closeMenuAndGoTo(link.getAttribute('href'))
     }
   })
+
+lightBoxClose = function() {
+  document.querySelector(".lightbox").classList.add("closed");
+}

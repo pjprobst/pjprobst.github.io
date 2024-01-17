@@ -39,7 +39,7 @@ body {
 .alert {
   padding: 10px;
   width: 25%;
-  position: center;
+  position: absolute;
   background-color: #e01705; /* Red */
   color: white;
   margin-bottom: 15px;

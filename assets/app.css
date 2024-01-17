@@ -37,10 +37,13 @@ body {
 
 /* The alert message box */
 .alert {
-  padding: 200px;
+  padding: 10px;
+  width: 25%;
+  position: center;
   background-color: #e01705; /* Red */
   color: white;
   margin-bottom: 15px;
+  z-index: 50;
 }
 
 /* The close button */

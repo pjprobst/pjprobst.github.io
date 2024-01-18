@@ -69,8 +69,8 @@ body {
   color: var(--primary-invert);
   font-weight: bold;
   float: right;
-  font-size: 22px;
-  line-height: 20px;
+  font-size: 32px;
+  line-height: 30px;
   cursor: pointer;
   transition: 0.3s;
 }

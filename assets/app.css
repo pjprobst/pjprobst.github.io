@@ -45,6 +45,8 @@ body {
   margin-bottom: 15px;
   z-index: 50;
   margin: auto;
+  y-index: 50;
+  x-index: 50;
 }
 
 /* The close button */

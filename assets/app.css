@@ -38,17 +38,17 @@ body {
 /* The alert message box */
 .alert {
   padding: 10px;
-  width: 200px; /* Set the width and height to the same value */
-  height: 200px; /* Set the width and height to the same value */
+  width: 300px; /* Set the width and height to the same value */
+  height: 300px; /* Set the width and height to the same value */
   background-color: #e01705; /* Red */
-  color: black;
+  color: white;
   margin-bottom: 15px;
   z-index: 50;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -100px; /* Half of the height */
-  margin-left: -100px; /* Half of the width */
+  margin-top: -150px; /* Half of the height */
+  margin-left: -150px; /* Half of the width */
 }
 
 /* The close button */

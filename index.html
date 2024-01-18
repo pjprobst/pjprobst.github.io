@@ -34,10 +34,31 @@
   <script src="https://mediafiles.botpress.cloud/ae1598ae-c32a-4bef-847c-571e27780e28/webchat/config.js" defer></script>
 
   <!--Website Disclaimer ================================ -->
-     <div class="alert">
-       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-       This is an alert box.
-      </div>
+     <!-- The overlay for blurred background -->
+<div class="overlay" id="overlay"></div>
+
+<!-- The alert message box -->
+<div class="alert" id="alert">
+  <span class="closebtn" onclick="closeAlert();">&times;</span>
+  This is an alert box.
+</div>
+
+<!-- Button to trigger the alert -->
+<button onclick="showAlert()">Show Alert</button>
+
+<script>
+  function showAlert() {
+    // Show the overlay and alert box
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('alert').style.display = 'block';
+  }
+
+  function closeAlert() {
+    // Hide the overlay and alert box
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('alert').style.display = 'none';
+  }
+</script>
     
   <!--Hero ====================================== -->
   <header class="hero container-fluid border-bottom">

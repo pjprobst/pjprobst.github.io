@@ -39,14 +39,15 @@ body {
 .alert {
   padding: 10px;
   width: 25%;
-  position: absolute;
   background-color: #e01705; /* Red */
   color: white;
   margin-bottom: 15px;
   z-index: 50;
-  margin: auto;
-  y-index: 50;
-  x-index: 50;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
 }
 
 /* The close button */

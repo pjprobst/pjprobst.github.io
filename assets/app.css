@@ -50,8 +50,8 @@ body {
 /* The alert message box */
 .alert {
   padding: 10px;
-  width: 200px; /* Set the width and height to the same value */
-  height: 200px; /* Set the width and height to the same value */
+  width: 400px; /* Set the width and height to the same value */
+  height: 400px; /* Set the width and height to the same value */
   background-color: #e01705; /* Red */
   color: white;
   margin-bottom: 15px;
@@ -59,8 +59,8 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -100px; /* Half of the height */
-  margin-left: -100px; /* Half of the width */
+  margin-top: -200px; /* Half of the height */
+  margin-left: -200px; /* Half of the width */
 }
 
 /* The close button */

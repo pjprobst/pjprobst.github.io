@@ -44,6 +44,7 @@ body {
   color: white;
   margin-bottom: 15px;
   z-index: 50;
+  margin: auto;
 }
 
 /* The close button */

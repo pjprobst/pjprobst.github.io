@@ -63,6 +63,12 @@ body {
   margin-left: -200px; /* Half of the width */
 }
 
+/* The blue bar at the top */
+.alert-bar {
+  height: 20px;
+  background-color: #0a1f44; /* Blue */
+}
+
 /* The close button */
 .closebtn {
   margin-left: 15px;

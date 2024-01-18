@@ -50,7 +50,7 @@ body {
 /* The alert message box */
 .alert {
   text-align: center;
-  font-size: 32;
+  font-size: 32px;
   padding: 25px;
   width: 500px; /* Set the width and height to the same value */
   height: 500px; /* Set the width and height to the same value */

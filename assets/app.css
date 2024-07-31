@@ -202,12 +202,12 @@ button:focus {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 2px;
+  margin-top: 98px;
 }
 
 @media(min-width: 992px) {
   .hero {
-    margin-top: 3px;
+    margin-top: 53px;
   }
 }
 

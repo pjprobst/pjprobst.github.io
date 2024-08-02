@@ -894,81 +894,84 @@ input[type='checkbox'] {
 /*     07. Services     */
 /************************/
 .cards-2 {
-	align-items: center; /* Centers the card vertically, if needed */
-	padding-top: 6.625rem;	
-	padding-bottom: 1.25rem;	
-	background-color: #fbfbfb;
+    display: flex;
+    justify-content: center; /* Centers the card horizontally */
+    align-items: center; /* Centers the card vertically, if needed */
+    padding-top: 6.625rem;    
+    padding-bottom: 1.25rem;    
+    background-color: #fbfbfb;
 }
 
 .cards-2 .section-title {
-	margin-bottom: 0.5rem;
-	text-align: center;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .cards-2 h2 {
-	margin-bottom: 3.25rem;
-	text-align: center;
+    margin-bottom: 3.25rem;
+    text-align: center;
 }
 
 .cards-2 .card {
-	align-items: center; /* Centers the card vertically, if needed */
-	margin-bottom: 5.625rem;
-	border: none;
-	background-color: transparent;
+    display: flex; /* Ensures that children are centered */
+    flex-direction: column; /* Keeps the content in a column */
+    align-items: center; /* Centers the card content horizontally */
+    margin-bottom: 5.625rem;
+    border: none;
+    background-color: transparent;
 }
 
 .cards-2 .card-image img {
-	border-top-left-radius: 0.375rem;
-	border-top-right-radius: 0.375rem;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
 }
 
 .cards-2 .card-body {
-	padding: 2.25rem 2rem 2.125rem 2rem;
-	border: 1px solid #ebe8e8;
-	border-bottom-left-radius: 0.375rem;
-	border-bottom-right-radius: 0.375rem;
-	background-color: #fff;
+    padding: 2.25rem 2rem 2.125rem 2rem;
+    border: 1px solid #ebe8e8;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    background-color: #fff;
 }
 
 .cards-2 h3 {
-	margin-bottom: 0.75rem;
-	text-align: center;
+    margin-bottom: 0.75rem;
+    text-align: center;
 }
 
 .cards-2 .list-unstyled {
-	margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .cards-2 .list-unstyled .fas {
-	color: #e01705;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
+    color: #e01705;
+    font-size: 0.5rem;
+    line-height: 1.375rem;
 }
 
 .cards-2 .list-unstyled .media-body {
-	margin-left: 0.625rem;
+    margin-left: 0.625rem;
 }
 
 .cards-2 .price {
-	margin-bottom: 0.25rem;
-	color: #484a46;
-	font: 700 1rem/1.5rem "Montserrat", sans-serif;
-	text-align: center;
+    margin-bottom: 0.25rem;
+    color: #484a46;
+    font: 700 1rem/1.5rem "Montserrat", sans-serif;
+    text-align: center;
 }
 
 .cards-2 .price span {
-	color: #e01705;
+    color: #e01705;
 }
 
 .cards-2 .button-container {
-	margin-top: -1.375rem;
-	text-align: center;
+    margin-top: -1.375rem;
+    text-align: center;
 }
 
 .cards-2 .btn-solid-reg:hover {
-	background-color: #fff;
+    background-color: #fff;
 }
-
 
 /*************************/
 /*     08. Details 1     */

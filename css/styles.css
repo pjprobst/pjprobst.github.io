@@ -1116,7 +1116,7 @@ input[type='checkbox'] {
 	display: block;
 	padding-left: 1.5rem;
 	border-radius: 0.125rem;
-	background: linear-gradient(to bottom right, #e01705, #1bd1a7);
+	background: linear-gradient(to bottom right, #e01705, #d7837c);
 }
 
 .tabs #tab-1 .progress-bar.first {

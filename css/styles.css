@@ -894,6 +894,7 @@ input[type='checkbox'] {
 /*     07. Services     */
 /************************/
 .cards-2 {
+	align-items: center; /* Centers the card vertically, if needed */
 	padding-top: 6.625rem;	
 	padding-bottom: 1.25rem;	
 	background-color: #fbfbfb;
@@ -910,6 +911,7 @@ input[type='checkbox'] {
 }
 
 .cards-2 .card {
+	align-items: center; /* Centers the card vertically, if needed */
 	margin-bottom: 5.625rem;
 	border: none;
 	background-color: transparent;

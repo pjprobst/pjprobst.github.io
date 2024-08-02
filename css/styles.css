@@ -675,7 +675,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link {
 	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -714,7 +714,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 

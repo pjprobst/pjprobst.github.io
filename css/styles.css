@@ -772,8 +772,6 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: url('../images/header-background.jpg') center center no-repeat;
-	background-size: cover;
 }
 
 .header .header-content {

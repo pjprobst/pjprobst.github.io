@@ -788,12 +788,12 @@ input[type='checkbox'] {
 
 .header h1 {
 	margin-bottom: 0.5rem;
-	color: #fff;
+	color: #000;
 }
 
 .header .p-large {
 	margin-bottom: 2rem;
-	color: #dfe5ec;
+	color: #000;
 }
 
 .header .btn-solid-lg {

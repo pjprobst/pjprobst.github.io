@@ -897,8 +897,8 @@ input[type='checkbox'] {
     display: flex;
     justify-content: center; /* Centers the card horizontally */
     align-items: center; /* Centers the card vertically, if needed */
-    padding-top: 6.625rem;    
-    padding-bottom: 1.25rem;    
+    padding-top: .01rem;    
+    padding-bottom: .01rem;    
     background-color: #fbfbfb;
 }
 

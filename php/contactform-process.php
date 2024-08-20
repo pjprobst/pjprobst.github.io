@@ -1,50 +1,42 @@
 <?php
 $errorMSG = "";
 
-if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
-} else {
-    $name = $_POST["name"];
-}
+// Validate and sanitize input
+$name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+$email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+$message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
-if (empty($_POST["email"])) {
-    $errorMSG = "Email is required ";
-} else {
-    $email = $_POST["email"];
+// Check if inputs are empty
+if (empty($name)) {
+    $errorMSG .= "Name is required. ";
 }
-
-if (empty($_POST["message"])) {
-    $errorMSG = "Message is required ";
-} else {
-    $message = $_POST["message"];
+if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errorMSG .= "Valid email is required. ";
+}
+if (empty($message)) {
+    $errorMSG .= "Message is required. ";
 }
 
 $EmailTo = "pjprobst27@gmail.com";
 $Subject = "New message from customer";
 
-// prepare email body text
+// Prepare email body text
 $Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
+$Body .= "Name: " . $name . "\n";
+$Body .= "Email: " . $email . "\n";
+$Body .= "Message: " . $message . "\n";
 
-// send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+// Send email
+if ($errorMSG == "") {
+    $headers = "From: " . $email;
+    $success = mail($EmailTo, $Subject, $Body, $headers);
 
-// redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
-}else{
-    if($errorMSG == ""){
-        echo "Something went wrong :(";
+    if ($success) {
+        echo "success";
     } else {
-        echo $errorMSG;
+        echo "Something went wrong :(";
     }
+} else {
+    echo $errorMSG;
 }
 ?>

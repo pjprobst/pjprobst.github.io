@@ -255,9 +255,6 @@
     <div class="form-group">
         <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
     </div>
-    <div class="form-message">
-        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-    </div>
 </form>
 <!-- end of contact form -->
 
@@ -269,7 +266,7 @@ function sendEmail(event) {
     const message = document.getElementById('cmessage').value;
 
     // Create the mailto link
-    const mailtoLink = `mailto:pjprobst27@example.com?subject=${encodeURIComponent(name)}%20Contact%20Form%20Submission&body=${encodeURIComponent(message)}`;
+    const mailtoLink = `mailto:pjprobst27@example.com?subject=Contact%20Form%20Submission%20From: ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
 
     // Redirect to the mailto link
     window.open(mailtoLink, '_blank');

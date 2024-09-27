@@ -182,7 +182,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title"><br><br><br><br>SERVICES</div>
-                    <h2>1ST MONTH FREE<br>Elevate your Website <br></h2>
+                    <h2>Get your First Month Free</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -211,7 +211,13 @@
             <p class="price">Priced At: <span>$199/mo</span></p>
         </div>
         <div class="button-container">
-            <a class="btn-solid-reg page-scroll" href="mailto:pjprobst27@gmail.com">CONTACT US</a>
+            <a class="btn-solid-reg page-scroll" href="#" onclick="openEmailWindow()">CONTACT US</a>
+<script>
+function openEmailWindow() {
+    const emailLink = "mailto:pjprobst27@gmail.com?subject=Interest%20In%20Customizable%20Chatbot";
+    window.open(emailLink, '_blank', 'width=600,height=400');
+}
+</script>
         </div> <!-- end of button-container -->
     </div>
     <!-- end of card -->
@@ -269,7 +275,7 @@ function sendEmail(event) {
     const mailtoLink = `mailto:pjprobst27@example.com?subject=Contact%20Form%20Submission%20From: ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
 
     // Redirect to the mailto link
-    window.open(mailtoLink, '_blank');
+    window.open(mailtoLink, '_blank', 'width=600,height=400');
 }
 </script>
 

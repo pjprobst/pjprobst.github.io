@@ -170,17 +170,6 @@
 
 
     /* Call Me Form */
-    $("#callMeForm").validator().on("submit", function(event) {
-    	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            lformError();
-            lsubmitMSG(false, "Please fill all fields!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            lsubmitForm();
-        }
-    });
 
     function lsubmitForm() {
         // initiate variables with form content
@@ -228,18 +217,6 @@
 
 
     /* Contact Form */
-    $("#contactForm").validator().on("submit", function(event) {
-    	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            cformError();
-            csubmitMSG(false, "Please fill all fields!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            csubmitForm();
-        }
-    });
-
     function csubmitForm() {
         // initiate variables with form content
 		var name = $("#cname").val();
@@ -281,20 +258,6 @@
         }
         $("#cmsgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
-
-
-    /* Privacy Form */
-    $("#privacyForm").validator().on("submit", function(event) {
-    	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            pformError();
-            psubmitMSG(false, "Please fill all fields!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            psubmitForm();
-        }
-    });
 
     function psubmitForm() {
         // initiate variables with form content
